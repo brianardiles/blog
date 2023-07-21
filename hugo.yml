@@ -1,0 +1,15 @@
+baseURL: 'https://blog.brianardiles.com'
+languageCode: es-ar
+title: Brian Ardiles - Blog
+theme: PaperMod
+params:
+  defaultTheme: light
+  disableThemeToggle: true
+  ShowCodeCopyButtons: true
+  ShowReadingTime: true
+
+outputs:
+    home:
+        - HTML
+        - RSS
+        - JSON # is necessary
