@@ -17,7 +17,7 @@ params:
     imageHeight: 170 # custom size
     buttons:
       - name: Blog
-        url: "https://blog.brianardiles.com"
+        url: "/posts"
   socialIcons:
       - name: "github"
         url: "https://github.com/brianardiles"
