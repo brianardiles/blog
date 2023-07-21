@@ -1,15 +1,25 @@
 baseURL: 'https://blog.brianardiles.com'
 languageCode: es-ar
-title: Brian Ardiles - Blog
+title: Brian Ardiles
 theme: PaperMod
 params:
   defaultTheme: light
   disableThemeToggle: true
   ShowCodeCopyButtons: true
   ShowReadingTime: true
-
-outputs:
-    home:
-        - HTML
-        - RSS
-        - JSON # is necessary
+  profileMode:
+    enabled: true
+    title: "Hi 👋🏼 I'm Brian Ardiles 🧑🏽‍💻" # optional default will be site title
+    subtitle: "Backend dev turned tech lead. Problem solver, tech enthusiast, always learning."
+    imageUrl: "https://pbs.twimg.com/profile_images/952366469337243648/PQuBmtf2.jpg" # optional
+    imageTitle: "profile photo" # optional
+    imageWidth: 170 # custom size
+    imageHeight: 170 # custom size
+    buttons:
+      - name: Blog
+        url: "https://blog.brianardiles.com"
+  socialIcons:
+      - name: "github"
+        url: "https://github.com/brianardiles"
+      - name: "twitter"
+        url: "https://twitter.com/brai4u"
