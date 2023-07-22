@@ -1,20 +1,26 @@
+env: 'production'
 baseURL: 'https://blog.brianardiles.com'
 languageCode: es-ar
 title: Brian Ardiles
+description: 'Backend dev turned tech lead. Problem solver, tech enthusiast, always learning.'
+author: Brian Ardiles
+keywords: ["brian", "ardiles", "blog", "backend", "tech", "lead", "web", "golang"]
 theme: PaperMod
 params:
   defaultTheme: light
   disableThemeToggle: true
   ShowCodeCopyButtons: true
   ShowReadingTime: true
+  schema.publisherType: Person
+  schema.sameAs: ["https://github.com/brianardiles", "https://twitter.com/brai4u"]
   profileMode:
     enabled: true
-    title: "Hi 👋🏼 I'm Brian Ardiles 🧑🏽‍💻" # optional default will be site title
+    title: "Hi 👋🏼 I'm Brian Ardiles 🧑🏽‍💻"
     subtitle: "Backend dev turned tech lead. Problem solver, tech enthusiast, always learning."
-    imageUrl: "https://pbs.twimg.com/profile_images/952366469337243648/PQuBmtf2.jpg" # optional
-    imageTitle: "profile photo" # optional
-    imageWidth: 170 # custom size
-    imageHeight: 170 # custom size
+    imageUrl: "https://pbs.twimg.com/profile_images/952366469337243648/PQuBmtf2.jpg"
+    imageTitle: "profile photo"
+    imageWidth: 170
+    imageHeight: 170
     buttons:
       - name: Blog
         url: "/posts"
