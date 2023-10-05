@@ -2,7 +2,7 @@
 title: "Como saber si dos strings son permutaciones con Go"
 date: 2020-11-20T09:03:20-03:00
 cover:
-    image: "https://photos.collectednotes.com/photos/565/aec2ce81-452e-46f7-83ba-98518bcb6aa1"
+    image: "posts/images/go-header.jpg"
     alt: "go lang"
     caption: "go lang"
 ---

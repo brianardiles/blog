@@ -2,7 +2,7 @@
 title: "Cómo forzar un request HTTP/1 en Go"
 date: 2020-11-20T09:03:20-08:00
 cover:
-    image: "https://photos.collectednotes.com/photos/565/f8bf5ff2-8ea6-4540-8688-f19243a48eda?x-amz-acl=public-read&X-Amz-Expires=3600&X-Amz-Date=20230201T210242Z&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIA5W2WJOHUP7IHVD6I%2F20230201%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-SignedHeaders=host&X-Amz-Signature=453f5890130f84d6cd3bdb81f09221565c85749734eb04b194d5c4efe3459c88"
+    image: "posts/images/http2.jpg"
 ---
 
 HTTP/2 es una versión más moderna y eficiente de HTTP que tiene algunas diferencias importantes con respecto a HTTP/1. En HTTP/2, todos los headers son transmitidos en formato binario y se espera que sean en minúscula. Esto significa que si envía un encabezado con mayúsculas, es posible que no sean reconocidos por el servidor y, por lo tanto, no se procesen correctamente.

@@ -1,38 +1,38 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Brian Ardiles - Blog</title>
-    <link>https://blog.brianardiles.com/</link>
-    <description>Recent content on Brian Ardiles - Blog</description>
+    <title>Brian Ardiles</title>
+    <link>brianardiles.com/</link>
+    <description>Recent content on Brian Ardiles</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>es-ar</language>
-    <lastBuildDate>Fri, 20 Nov 2020 09:03:20 -0800</lastBuildDate><atom:link href="https://blog.brianardiles.com/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 20 Nov 2020 09:03:20 -0800</lastBuildDate><atom:link href="brianardiles.com/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Cómo forzar un request HTTP/1 en Go</title>
-      <link>https://blog.brianardiles.com/posts/forzar-http-1-go/</link>
+      <link>brianardiles.com/posts/forzar-http-1-go/</link>
       <pubDate>Fri, 20 Nov 2020 09:03:20 -0800</pubDate>
       
-      <guid>https://blog.brianardiles.com/posts/forzar-http-1-go/</guid>
+      <guid>brianardiles.com/posts/forzar-http-1-go/</guid>
       <description>HTTP/2 es una versión más moderna y eficiente de HTTP que tiene algunas diferencias importantes con respecto a HTTP/1. En HTTP/2, todos los headers son transmitidos en formato binario y se espera que sean en minúscula. Esto significa que si envía un encabezado con mayúsculas, es posible que no sean reconocidos por el servidor y, por lo tanto, no se procesen correctamente.
 Por ejemplo, si mandamos un header como POWERED_BY sin avisar y sin mostrar ningun tipo de log o warning el cliente de HTTP/2 va a modificar y enviar el header como powered_by Causando que el servicio que esta esperando el header todo en mayusculas, lo reciba todo en minusculas, eso haria que no encuentre el header y por lo tanto entienda que el header no fue enviado, ejecundo un flujo totalmente distinto.</description>
     </item>
     
     <item>
       <title>Como saber si dos strings son permutaciones con Go</title>
-      <link>https://blog.brianardiles.com/posts/go-permutaciones/</link>
+      <link>brianardiles.com/posts/go-permutaciones/</link>
       <pubDate>Fri, 20 Nov 2020 09:03:20 -0300</pubDate>
       
-      <guid>https://blog.brianardiles.com/posts/go-permutaciones/</guid>
+      <guid>brianardiles.com/posts/go-permutaciones/</guid>
       <description>Que es una permutacion Para saber si dos strings son permutaciones, primero tenemos que saber que es una permutacion, son aquellas palabras que contienen exactamente los mismos caracteres, pero esta ordenados de una manera distinta, por ejemplo, una permutacion de AUTO podría ser ATOU, otra podría ser OAUT, etc
 Sabiendo esto podemos empezar a escribir el programa en Go que nos diga si dos strings son permutaciones o no. Hay varias formas de hacerlo, algunas mas optimas que otras</description>
     </item>
     
     <item>
       <title>Goroutines y channels en Go</title>
-      <link>https://blog.brianardiles.com/posts/go-channels/</link>
+      <link>brianardiles.com/posts/go-channels/</link>
       <pubDate>Fri, 20 Nov 2020 09:03:20 -0300</pubDate>
       
-      <guid>https://blog.brianardiles.com/posts/go-channels/</guid>
+      <guid>brianardiles.com/posts/go-channels/</guid>
       <description>Que es una goroutine? Una goroutine es como un hilo, pero manejado por Go. Es mas liviano que un hilo tradicional y al estar completamente integrado al lenguaje, es mas sencillo de implementar.
 Que beneficios tienen? Las principales ventajas que tienen estas goroutines es que están muy bien optimizadas en la gestión de recursos, por lo tanto es posible tener cientos o hasta miles de goroutines a un costo mucho menor que si fueran hilos tradicionales.</description>
     </item>

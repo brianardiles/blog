@@ -17,7 +17,7 @@ params:
     enabled: true
     title: "Hi 👋🏼 I'm Brian Ardiles 🧑🏽‍💻"
     subtitle: "Backend dev turned tech lead. Problem solver, tech enthusiast, always learning."
-    imageUrl: "https://i.imgur.com/EPJVDbC.jpeg"
+    imageUrl: "posts/images/profile.jpeg"
     imageTitle: "profile photo"
     imageWidth: 170
     imageHeight: 170

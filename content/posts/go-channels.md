@@ -2,7 +2,7 @@
 title: "Goroutines y channels en Go"
 date: 2020-11-20T09:03:20-03:00
 cover:
-    image: "https://i.imgur.com/x8IZ7Rm.png"
+    image: "posts/images/go-channel.png"
     alt: "go lang"
     caption: "go lang"
 ---
