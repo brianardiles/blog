@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>Desarrollando una app de seguimiento de agua personal sin experiencia en Swift, utilizando ChatGPT | Brian Ardiles</title>
+<meta name="keywords" content="">
+<meta name="description" content="Existen cientos de apps para tracking de cuanta agua tomamos al día. Pero el 99,9% de las apps tiene al menos 1 de los siguientes problemas:
+Requiere registro/loggin Necesita conexión a internet Tienen ads UI compleja Tracking intrusivo (para mas ads) No tiene soporte para Apple Watch Por lo que opte por crear mi propia app intentando no caer en ninguno del los problemas anteriores. Hice algunos wireframes a mano con la idea que tenia en la cabeza.">
+<meta name="author" content="">
+<link rel="canonical" href="brianardiles.com/posts/desarrollando-una-app-de-seguimiento-de-agua-personal-sin-experiencia-en-swift-utilizando-chatgpt/">
+<link crossorigin="anonymous" href="/brianardiles.com/assets/css/stylesheet.3613efbd0b1772781e8f49935e973cae632a7f61471c05b17be155505ccf87b5.css" integrity="sha256-NhPvvQsXcngej0mTXpc8rmMqf2FHHAWxe&#43;FVUFzPh7U=" rel="preload stylesheet" as="style">
+<script defer crossorigin="anonymous" src="/brianardiles.com/assets/js/highlight.f413e19d0714851f6474e7ee9632408e58ac146fbdbe62747134bea2fa3415e0.js" integrity="sha256-9BPhnQcUhR9kdOfuljJAjlisFG&#43;9vmJ0cTS&#43;ovo0FeA="
+    onload="hljs.initHighlightingOnLoad();"></script>
+<link rel="icon" href="brianardiles.com/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="brianardiles.com/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="brianardiles.com/favicon-32x32.png">
+<link rel="apple-touch-icon" href="brianardiles.com/apple-touch-icon.png">
+<link rel="mask-icon" href="brianardiles.com/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+</noscript><meta property="og:title" content="Desarrollando una app de seguimiento de agua personal sin experiencia en Swift, utilizando ChatGPT" />
+<meta property="og:description" content="Existen cientos de apps para tracking de cuanta agua tomamos al día. Pero el 99,9% de las apps tiene al menos 1 de los siguientes problemas:
+Requiere registro/loggin Necesita conexión a internet Tienen ads UI compleja Tracking intrusivo (para mas ads) No tiene soporte para Apple Watch Por lo que opte por crear mi propia app intentando no caer en ninguno del los problemas anteriores. Hice algunos wireframes a mano con la idea que tenia en la cabeza." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="brianardiles.com/posts/desarrollando-una-app-de-seguimiento-de-agua-personal-sin-experiencia-en-swift-utilizando-chatgpt/" />
+<meta property="og:image" content="brianardiles.com/posts/images/ai-human.jpg" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2023-10-07T09:03:20-08:00" />
+<meta property="article:modified_time" content="2023-10-07T09:03:20-08:00" />
+
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:image" content="brianardiles.com/posts/images/ai-human.jpg" />
+<meta name="twitter:title" content="Desarrollando una app de seguimiento de agua personal sin experiencia en Swift, utilizando ChatGPT"/>
+<meta name="twitter:description" content="Existen cientos de apps para tracking de cuanta agua tomamos al día. Pero el 99,9% de las apps tiene al menos 1 de los siguientes problemas:
+Requiere registro/loggin Necesita conexión a internet Tienen ads UI compleja Tracking intrusivo (para mas ads) No tiene soporte para Apple Watch Por lo que opte por crear mi propia app intentando no caer en ninguno del los problemas anteriores. Hice algunos wireframes a mano con la idea que tenia en la cabeza."/>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "Posts",
+      "item": "brianardiles.com/posts/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  3 ,
+      "name": "Desarrollando una app de seguimiento de agua personal sin experiencia en Swift, utilizando ChatGPT",
+      "item": "brianardiles.com/posts/desarrollando-una-app-de-seguimiento-de-agua-personal-sin-experiencia-en-swift-utilizando-chatgpt/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Desarrollando una app de seguimiento de agua personal sin experiencia en Swift, utilizando ChatGPT",
+  "name": "Desarrollando una app de seguimiento de agua personal sin experiencia en Swift, utilizando ChatGPT",
+  "description": "Existen cientos de apps para tracking de cuanta agua tomamos al día. Pero el 99,9% de las apps tiene al menos 1 de los siguientes problemas:\nRequiere registro/loggin Necesita conexión a internet Tienen ads UI compleja Tracking intrusivo (para mas ads) No tiene soporte para Apple Watch Por lo que opte por crear mi propia app intentando no caer en ninguno del los problemas anteriores. Hice algunos wireframes a mano con la idea que tenia en la cabeza.",
+  "keywords": [
+    
+  ],
+  "articleBody": "Existen cientos de apps para tracking de cuanta agua tomamos al día. Pero el 99,9% de las apps tiene al menos 1 de los siguientes problemas:\nRequiere registro/loggin Necesita conexión a internet Tienen ads UI compleja Tracking intrusivo (para mas ads) No tiene soporte para Apple Watch Por lo que opte por crear mi propia app intentando no caer en ninguno del los problemas anteriores. Hice algunos wireframes a mano con la idea que tenia en la cabeza. La primera barrera que tuve fue contar con casi 0 conocimiento en Swift (el lenguaje que se usa para crear apps para cosas Apple) por lo que se me ocurrió empezar a preguntarle a chatGPT\nPrompt inicial:\nCódigo en Swift para una aplicación de tracking de agua diario donde cuente con un botón para agregar un litro de agua cada vez que se toca y un scroll para poder seleccionar entre 0,25 0,5 o 1 litro de agua, eso se tiene que ir sumando y mostrar un progreso donde el 100% representa 3 litros de agua\ndespués de varias iteraciones (unas 8 o 10) el chat retorno un resultado bastante potable 90% funcional, con algunos ajustes a mano quedo funcionando, todo esto con gpt-3.5 (la versión free, calculo que usando la versión 4 de pago el resultado hubiera sido mejor)\nCon algunas mejoras manuales (a pura prueba y error) quedo una app 100% funcional que no cae en ninguno de los problemas iniciales y cumple su única tarea: tracking de agua tomada.\nCon chatgpt + google llegue a esta version de la app, una digna v1.0 pic.twitter.com/rF9kDlgkqr\n— Brian Ardiles ⚡️ (@brai4u) October 8, 2023 ",
+  "wordCount" : "273",
+  "inLanguage": "en",
+  "image":"brianardiles.com/posts/images/ai-human.jpg","datePublished": "2023-10-07T09:03:20-08:00",
+  "dateModified": "2023-10-07T09:03:20-08:00",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "brianardiles.com/posts/desarrollando-una-app-de-seguimiento-de-agua-personal-sin-experiencia-en-swift-utilizando-chatgpt/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Brian Ardiles",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "brianardiles.com/favicon.ico"
+    }
+  }
+}
+</script>
+</head>
+
+<body class="" id="top">
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="brianardiles.com" accesskey="h" title="Brian Ardiles (Alt + H)">Brian Ardiles</a>
+            <div class="logo-switches">
+            </div>
+        </div>
+        <ul id="menu">
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title">
+      Desarrollando una app de seguimiento de agua personal sin experiencia en Swift, utilizando ChatGPT
+    </h1>
+    <div class="post-meta"><span title='2023-10-07 09:03:20 -0800 -0800'>October 7, 2023</span>&nbsp;·&nbsp;2 min
+
+</div>
+  </header> 
+<figure class="entry-cover"><img loading="lazy" src="brianardiles.com/posts/images/ai-human.jpg" alt="Imagen de rawpixel.com en Freepik">
+        <p>Imagen de rawpixel.com en Freepik</p>
+</figure>
+  <div class="post-content"><p>Existen cientos de apps para tracking de cuanta agua tomamos al día. Pero el 99,9% de las apps tiene <strong>al menos 1</strong> de los siguientes problemas:</p>
+<ul>
+<li>Requiere registro/loggin</li>
+<li>Necesita conexión a internet</li>
+<li>Tienen ads</li>
+<li>UI compleja</li>
+<li>Tracking intrusivo (para mas ads)</li>
+<li>No tiene soporte para Apple Watch</li>
+</ul>
+<p>Por lo que opte por crear mi propia app <strong>intentando no caer en ninguno del los problemas anteriores</strong>. Hice algunos wireframes a mano con la idea que tenia en la cabeza.
+La primera barrera que tuve fue contar con casi 0 conocimiento en Swift (<em>el lenguaje que se usa para crear apps para cosas Apple</em>) por lo que se me ocurrió empezar a preguntarle a chatGPT</p>
+<p>Prompt inicial:</p>
+<p><code>Código en Swift para una aplicación de tracking de agua diario donde cuente con un botón para agregar un litro de agua cada vez que se toca y un scroll para poder seleccionar entre 0,25 0,5 o 1 litro de agua, eso se tiene que ir sumando y mostrar un progreso donde el 100% representa 3 litros de agua</code></p>
+<p><strong>después de varias iteraciones</strong> (unas 8 o 10) el chat retorno un resultado bastante potable 90% funcional, con algunos ajustes a mano quedo funcionando, todo esto con gpt-3.5 (<em>la versión free, calculo que usando la versión 4 de pago el resultado hubiera sido mejor</em>)</p>
+<p>Con algunas mejoras manuales (a pura prueba y error) quedo una app 100% funcional que no cae en ninguno de los problemas iniciales y cumple su única tarea: tracking de agua tomada.</p>
+<blockquote class="twitter-tweet"><p lang="es" dir="ltr">Con chatgpt + google llegue a esta version de la app, una digna v1.0 <a href="https://t.co/rF9kDlgkqr">pic.twitter.com/rF9kDlgkqr</a></p>&mdash; Brian Ardiles ⚡️ (@brai4u) <a href="https://twitter.com/brai4u/status/1710810883402727932?ref_src=twsrc%5Etfw">October 8, 2023</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+    </ul>
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+    <span>&copy; 2023 <a href="brianardiles.com">Brian Ardiles</a></span>
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerHTML = 'copy';
+
+        function copyingDone() {
+            copybutton.innerHTML = 'copied!';
+            setTimeout(() => {
+                copybutton.innerHTML = 'copy';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
+</body>
+
+</html>
