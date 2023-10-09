@@ -4,26 +4,35 @@
   <url>
     <loc>brianardiles.com/</loc>
     <lastmod>2023-10-07T09:03:20-08:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url><url>
     <loc>brianardiles.com/posts/desarrollando-una-app-de-seguimiento-de-agua-personal-sin-experiencia-en-swift-utilizando-chatgpt/</loc>
     <lastmod>2023-10-07T09:03:20-08:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url><url>
     <loc>brianardiles.com/posts/</loc>
     <lastmod>2023-10-07T09:03:20-08:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url><url>
     <loc>brianardiles.com/posts/forzar-http-1-go/</loc>
     <lastmod>2020-11-20T09:03:20-08:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url><url>
     <loc>brianardiles.com/posts/go-permutaciones/</loc>
     <lastmod>2020-11-20T09:03:20-03:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url><url>
     <loc>brianardiles.com/posts/go-channels/</loc>
     <lastmod>2020-11-20T09:03:20-03:00</lastmod>
+    <changefreq>weekly</changefreq>
   </url><url>
     <loc>brianardiles.com/categories/</loc>
+    <changefreq>weekly</changefreq>
   </url><url>
     <loc>brianardiles.com/search/</loc>
+    <changefreq>weekly</changefreq>
   </url><url>
     <loc>brianardiles.com/tags/</loc>
+    <changefreq>weekly</changefreq>
   </url>
 </urlset>

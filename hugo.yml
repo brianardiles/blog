@@ -29,3 +29,7 @@ params:
         url: "https://github.com/brianardiles"
       - name: "twitter"
         url: "https://twitter.com/brai4u"
+sitemap:
+  changeFreq: "weekly"
+  filename: sitemap.xml
+  priority: -1
