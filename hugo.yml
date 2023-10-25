@@ -5,7 +5,7 @@ title: Brian Ardiles
 description: 'Backend dev turned tech lead. Problem solver, tech enthusiast, always learning.'
 author: Brian Ardiles
 keywords: ["brian", "ardiles", "blog", "backend", "tech", "lead", "web", "golang"]
-theme: PaperMod
+theme: ["PaperMod", "plausible-hugo"]
 params:
   defaultTheme: light
   disableThemeToggle: true
@@ -29,8 +29,10 @@ params:
         url: "https://github.com/brianardiles"
       - name: "twitter"
         url: "https://twitter.com/brai4u"
+  plausible:
+    enable: true
+    domain: brianardiles.com
 sitemap:
   changeFreq: "weekly"
   filename: sitemap.xml
   priority: -1
-googleAnalytics: G-58G9S28896
