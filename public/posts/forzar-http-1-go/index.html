@@ -3,18 +3,6 @@
 
 <head><meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-58G9S28896"></script>
-<script>
-var doNotTrack = false;
-if (!doNotTrack) {
-	window.dataLayer = window.dataLayer || [];
-	function gtag(){dataLayer.push(arguments);}
-	gtag('js', new Date());
-	gtag('config', 'G-58G9S28896', { 'anonymize_ip': false });
-}
-</script>
-
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="robots" content="index, follow">
 <title>Cómo forzar un request HTTP/1 en Go | Brian Ardiles</title>
@@ -41,18 +29,7 @@ Por ejemplo, si mandamos un header como POWERED_BY sin avisar y sin mostrar ning
         }
 
     </style>
-</noscript>
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-58G9S28896"></script>
-<script>
-var doNotTrack = false;
-if (!doNotTrack) {
-	window.dataLayer = window.dataLayer || [];
-	function gtag(){dataLayer.push(arguments);}
-	gtag('js', new Date());
-	gtag('config', 'G-58G9S28896', { 'anonymize_ip': false });
-}
-</script>
-<meta property="og:title" content="Cómo forzar un request HTTP/1 en Go" />
+</noscript><meta property="og:title" content="Cómo forzar un request HTTP/1 en Go" />
 <meta property="og:description" content="HTTP/2 es una versión más moderna y eficiente de HTTP que tiene algunas diferencias importantes con respecto a HTTP/1. En HTTP/2, todos los headers son transmitidos en formato binario y se espera que sean en minúscula. Esto significa que si envía un encabezado con mayúsculas, es posible que no sean reconocidos por el servidor y, por lo tanto, no se procesen correctamente.
 Por ejemplo, si mandamos un header como POWERED_BY sin avisar y sin mostrar ningun tipo de log o warning el cliente de HTTP/2 va a modificar y enviar el header como powered_by Causando que el servicio que esta esperando el header todo en mayusculas, lo reciba todo en minusculas, eso haria que no encuentre el header y por lo tanto entienda que el header no fue enviado, ejecundo un flujo totalmente distinto." />
 <meta property="og:type" content="article" />

@@ -29,9 +29,6 @@ params:
         url: "https://github.com/brianardiles"
       - name: "twitter"
         url: "https://twitter.com/brai4u"
-  plausible:
-    enable: true
-    domain: brianardiles.com
 sitemap:
   changeFreq: "weekly"
   filename: sitemap.xml
