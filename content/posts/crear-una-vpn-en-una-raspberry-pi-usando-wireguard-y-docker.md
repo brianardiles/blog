@@ -1,6 +1,9 @@
 ---
 title: "Crear una VPN en una Raspberry Pi usando WireGuard y Docker"
 date: 2024-01-21T18:52:53-03:00
+cover:
+    image: "posts/images/vpn-wireguard/louis-reed-zDxlNcdUzxk-unsplash.jpg"
+    caption: "Imagen de unsplash.com"
 draft: false
 ---
 
