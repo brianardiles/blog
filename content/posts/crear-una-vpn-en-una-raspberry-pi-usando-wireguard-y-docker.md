@@ -68,7 +68,7 @@ services:
 
 5. Agregar un nuevo cliente desde la UI
 
-![](posts/images/vpn-wireguard/admin-ui-add-client.png)
+![](/posts/images/vpn-wireguard/admin-ui-add-client.png)
 
 7. Instalar el cliente de WireGuard e Instalar el certificado, por ejemplo en el cliente para iPhone y Android se puede escanear el QR desde la UI de admin
 
