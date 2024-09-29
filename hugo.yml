@@ -29,6 +29,8 @@ params:
         url: "https://github.com/brianardiles"
       - name: "twitter"
         url: "https://twitter.com/brai4u"
+      - name: "linkedin"
+        url: "https://www.linkedin.com/in/brian-ardiles/"
 sitemap:
   changeFreq: "weekly"
   filename: sitemap.xml
