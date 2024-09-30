@@ -35,3 +35,6 @@ sitemap:
   changeFreq: "weekly"
   filename: sitemap.xml
   priority: -1
+services:
+  googleAnalytics:
+    id: G-58G9S28896
