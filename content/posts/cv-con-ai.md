@@ -8,7 +8,7 @@ cover:
     image: "posts/images/ai-cv.jpg"
 ---
 
-Cada vez más **recluters** y plataformas de **recluting** están usando **AI** para contratar. Sobre todo en la **clasificación de CVs** directamente, para luego pasar a una revisión manual. Pero es muy probable que un *mal CV* o un CV no validable por una AI no pase este primer filtro.
+Cada vez más **recruiters** y **plataformas de recruiting** están usando **AI** para contratar. Sobre todo en la **clasificación de CVs** directamente, para luego pasar a una revisión manual. Por eso es muy probable que un *mal CV* o un CV *no-validable* por una AI no pase este primer filtro.
 
 La solución es fácil, pasarle el CV en **PDF a ChatGPT** con un prompt específico por ejemplo:
 
