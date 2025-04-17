@@ -38,3 +38,6 @@ sitemap:
 services:
   googleAnalytics:
     id: G-58G9S28896
+cover:
+  hiddenInList: true
+  hiddenInSingle: false
