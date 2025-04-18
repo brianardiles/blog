@@ -1,5 +1,5 @@
 env: 'production'
-baseURL: 'https://brianardiles.com/'
+baseURL: '/'
 languageCode: es-ar
 title: Brian Ardiles
 description: 'Backend dev turned tech lead. Problem solver, tech enthusiast, always learning.'
