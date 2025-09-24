@@ -37,15 +37,22 @@ Prefiero siempre usar software *dockerizado* ya que me permite guardar una copia
 
 1. Crear un archivo docker-compose.yaml con la imagen y los parámetros que contienen WireGuard + Web admin UI
 
+Generar password hash:
+
 ```
-version: "3.8"
+docker run ghcr.io/wg-easy/wg-easy:14 node -e 'const bcrypt = require("bcryptjs"); const hash = bcrypt.hashSync("TUCONTRASEÑA", 10); console.log(hash.replace(/\$/g, "$$$$"));'
+```
+
+```
 services:
   wg-easy:
     container_name: wg-easy
-    image: ghcr.io/wg-easy/wg-easy
+    image: ghcr.io/wg-easy/wg-easy:14
     environment:
-      - PASSWORD=<secret passowrd>
-      - WG_HOST=<IP host o DNS>
+      - PASSWORD_HASH=ElPasswordHashGeneradoSinComillas
+      - WG_HOST=LaIpDeLaRaspberry
+      - WG_DEFAULT_DNS=8.8.8.8,8.8.4.4
+      - WG_DEFAULT_ADDRESS=10.8.0.x
     volumes:
       - ./config:/etc/wireguard
       - /lib/modules:/lib/modules
